@@ -1,0 +1,33 @@
+<h1>Sign in Page</h1>
+<p>Mind you every password might not be secretive</p>
+
+<%= 'HELLO' %>
+
+<br>
+<% if @name_param %>
+<%= @name_param %>
+<% end %>
+
+<br>
+<% if @username %>
+<%= @username %>
+<% end %>
+
+<br>
+<% if password %>
+<%= @password %>
+<% end %>
+<br>
+
+
+
+
+
+<form method='POST' action='/sign-in'>
+<label for='username'>Username</label>
+<input type='text' name="username"><br>
+<br>
+<label for='password'>Password</label>
+<input type='password' name='password'><br>
+<input type='submit'>
+</form>
