@@ -1,8 +1,13 @@
 require 'sinatra'
 require 'mandrill'
 require 'tilt/erb'
+require 'geolocater'
 
 set :bind, '0.0.0.0'
+
+record = Geolocater.geolocate_ip("96.239.16.202")
+puts record
+
 
 #arrays
 
